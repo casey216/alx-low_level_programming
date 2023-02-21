@@ -13,7 +13,7 @@ void jack_bauer(void)
 	{
 		int hour = n / 60;
 		int minute = n % 60;
-	
+
 		_putchar((hour / 10) + '0');
 		_putchar((hour % 10) + '0');
 		_putchar(':');
