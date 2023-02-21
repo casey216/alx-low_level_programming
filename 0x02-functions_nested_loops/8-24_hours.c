@@ -8,13 +8,15 @@
 void jack_bauer(void)
 {
 	int n;
+
 	for (n = 0; n < 1440; n++)
 	{
 		int hour = n / 60;
 		int minute = n % 60;
-		_putchar(hour);
+	
+		_putchar(hour + '0');
 		_putchar(':');
-		_putchar(minute);
+		_putchar(minute + '0');
 		_putchar('\n');
 	}
 }
