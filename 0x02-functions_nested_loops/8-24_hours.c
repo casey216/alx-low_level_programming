@@ -5,7 +5,7 @@
 /**
  * jack_bauer - prints every minute of the day
  */
-void print_last_digit(void)
+void jack_bauer(void)
 {
 	int n;
 	for (n = 0; n < 1440; n++)
