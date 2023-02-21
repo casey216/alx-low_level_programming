@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <ctype>
+#include <ctype.h>
 #include "main.h"
 /**
  * _islower - prints "_putchar"
