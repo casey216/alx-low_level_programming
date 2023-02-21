@@ -4,18 +4,10 @@
 #include "main.h"
 /**
  * _abs - checks if char is an alphabet
- * @c: The char to be checked
- * Return: 1 if c is an alphabet, 0 otherwise
+ * @n: The number to be made absolute
+ * Return: absolute value of n
  */
-int _abs(int c)
+int _abs(int n)
 {
-	if (isalpha(c))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-
+	return abs(n);
 }
