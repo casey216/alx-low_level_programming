@@ -28,6 +28,11 @@ void times_table(void)
 				_putchar(product + '0');
 			}
 
+			if (j == 9)
+			{
+				_putchar('\n');
+				break;
+			}
 			_putchar(',');
 			_putchar(' ');
 		}
