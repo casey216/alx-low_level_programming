@@ -1,45 +1,40 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <ctype.h>
 #include "main.h"
 /**
- * print_to_98 - checks if char is lowercase
- * @n: The char to be checked
-*/
+ * print_to_98 - a function that prints all natural numbers from n to 98
+ * user input's number prints to 98, regardless < 98 or > 98
+ * @n: number input
+ * Return: Always 0 (Success)
+ */
 void print_to_98(int n)
 {
-	if (n > 98)
+	if (n < 98)
 	{
-		for (n; n >= 98; n--)
+		while (n <= 98)
 		{
-			if (n > 10)
+			printf("%d", n);
+			if (n != 98)
 			{
-				_putchar(n / 10 + '0');
-				_putchar(n % 10 + '0');
+				printf(", ");
 			}
-			else
+			n++;
+		}
+	}
+	else if (n > 98)
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
 			{
-				_putchar(n + '0');
+				printf(", ");
 			}
-
-			_putchar(',');
+			n--;
 		}
 	}
 	else
 	{
-		for (n; n <= 98; n++)
-		{
-
-                                _putchar(n / 10 + '0');
-                                _putchar(n % 10 + '0');
-                        }
-                        else
-                        {
-                                _putchar(n + '0');
-                        }
-
-                        _putchar(',');
-                }
-	}	
+		printf("98");
+	}
+	printf("\n");
 }
-
