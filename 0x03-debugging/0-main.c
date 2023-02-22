@@ -1,15 +1,17 @@
 #include "main.h"
+
 /**
- * main - assigns a random number to int n everytime
- * it executes, and prints it.
- * Return: 0 if no errors, return non-zero if errors
- */
+ *main - Entry point
+ *
+ * Return: Always 0 (Success)
+**/
+
 int main(void)
 {
-	int n;
+	int i;
 
-	n = 0;
-	positive_or_negative(n)
-
+	i = 0;
+	positive_or_negative(i);
 	return (0);
 }
+
