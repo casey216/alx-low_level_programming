@@ -18,6 +18,8 @@ int _atoi(char *s)
 
 	while (s[length] != '\0')
 		length++;
+	
+	printf("%d\n", length);
 
 	while (i < length && !found)
 	{
