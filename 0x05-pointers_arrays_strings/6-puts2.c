@@ -18,7 +18,10 @@ void puts2(char *str)
 	while (i < length)
 	{
 		if (i % 2 == 0)
+		{
+			printf("%i", i)
 			_putchar(*(str + length));
+		}
 		i++;
 	}
 
