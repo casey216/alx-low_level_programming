@@ -30,6 +30,7 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			temp = s[i];
+			printf("%d\n", temp);
 			number = number * 10 + temp;
 
 			if (s[i + 1] < '0' || s[i + 1] > '9')
