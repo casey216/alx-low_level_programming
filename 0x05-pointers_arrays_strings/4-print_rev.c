@@ -16,6 +16,7 @@ void print_rev(char *s)
 	while (length-- >= 0)
 	{
 		_putchar(*(s--));
+		printf("%d", length);
 	}
 	
 	
