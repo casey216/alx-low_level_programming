@@ -8,7 +8,8 @@
 
 int _atoi(char *s)
 {
-	int length, i, sign, number;
+	int length, i, sign;
+	unsigned int number;
 	bool found;
 
 	length = 0;
