@@ -38,7 +38,5 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (!found)
-		return (0);
 	return (sign * number);
 }
