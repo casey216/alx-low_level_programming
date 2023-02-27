@@ -19,7 +19,7 @@ void puts2(char *str)
 	{
 		if (i % 2 == 0)
 		{
-			printf("%i", i)
+			printf("%d, %d", i, i % 2);
 			_putchar(*(str + length));
 		}
 		i++;
