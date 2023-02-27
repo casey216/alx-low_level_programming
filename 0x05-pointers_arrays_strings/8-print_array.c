@@ -1,23 +1,17 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_rev - prints string in reverse
- * @s: string varible
+ * print_array - prints numbers in an array
+ * @a: integer array varible
+ * @n: lengtth of array variable
  */
 
-void print_rev(char *s)
+void print_array(int *a, int n)
 {
-	int length = 0;
+	int i;
 
-	while (s[length] != '\0')
-	{
-		length++;
-	}
+	for (i = 0; i < n - 1; i++)
+		printf("%d, ", a[i]);
 
-	while (length-- > 0)
-	{
-		_putchar(*(s + length));
-	}
-
-	_putchar('\n');
+	printf("%d", a[n - 1]);
 }
