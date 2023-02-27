@@ -11,9 +11,9 @@ int _atoi(char *s)
 	int length, i, minus, number, temp;
 	bool found;
 
-	length =0;
+	length = 0;
 	i = 0;
-	minus =0;
+	sign = 1;
 	number = 0;
 	found = false;
 
@@ -23,7 +23,7 @@ int _atoi(char *s)
 	while (i < length && !found)
 	{
 		if (s[i] == '-')
-			minus++;
+			sign *= -1;
 		
 		if (s[i] >= '0' && s[i] <= '9')
 		{
@@ -41,13 +41,5 @@ int _atoi(char *s)
 
 	if (!found)
 		return (0);
-
-	if (minus % 2 == 0)
-	{
-		return (number);
-	}
-	else
-	{
-		return (-1 * number);
-	}
+	return (sign * number);
 }
