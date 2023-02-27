@@ -1,3 +1,4 @@
+#include <stdbool.h>
 /**
  * _atoi - converts string to integer
  * @s: string to be converted
@@ -6,7 +7,7 @@
 
 int _atoi(char *s)
 {
-	int lenght, i, minus, number, temp;
+	int length, i, minus, number, temp;
 	bool found;
 
 	length =0;
