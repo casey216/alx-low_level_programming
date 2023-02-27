@@ -19,8 +19,6 @@ int _atoi(char *s)
 
 	while (s[length] != '\0')
 		length++;
-	
-	printf("%d\n", length);
 
 	while (i < length && !found)
 	{
@@ -30,7 +28,6 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			temp = s[i] - '0';
-			printf("%c\n", *s);
 			number = number * 10 + temp;
 
 			if (s[i + 1] < '0' || s[i + 1] > '9')
