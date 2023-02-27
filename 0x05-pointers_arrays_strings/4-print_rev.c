@@ -13,11 +13,12 @@ void print_rev(char *s)
 	{
 		length++;
 	}
+	
+	s--;
 
 	while (length-- >= 0)
 	{
 		_putchar(*(--s));
-		printf("%d", length);
 	}
 	
 	
