@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _strcat - concatenate string src to string dest
  * @src: source string variable
