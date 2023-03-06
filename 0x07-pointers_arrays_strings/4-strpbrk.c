@@ -11,6 +11,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	char *copy = accept;
 
 	while (*s++)
 	{
@@ -19,6 +20,8 @@ char *_strpbrk(char *s, char *accept)
 			if (*s == *accept)
 				return (s);
 		}
+
+		accept = copy;
 	}
 
 	return (NULL);
