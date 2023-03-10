@@ -3,7 +3,6 @@
 #include "main.h"
 
 /**
- *
  * main - multipky two numbers
  *
  * @argc: number of command line arguments

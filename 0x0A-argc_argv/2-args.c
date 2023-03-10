@@ -2,7 +2,6 @@
 #include "main.h"
 
 /**
- *
  * main - prints the name of the program
  *
  * @argc: number of command line arguments
