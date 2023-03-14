@@ -15,8 +15,14 @@ char *str_concat(char *s1, char *s2)
 	char *concat_str;
 	unsigned int i, j, k, l;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (NULL);
+
+	if (s1 == NULL)
+		s1 = '\0';
+
+	if (s2 == NULL)
+		s2 = '\0';
 
 	i = 0;
 	j = 0;
